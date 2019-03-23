@@ -29,3 +29,8 @@ function PrintInfo() {
     });
     console.log(c);
 }
+console.log(greeter("10"));
+function greeter(person) {
+    return "Hello, " + person;
+}
+var user = "Jane User";
