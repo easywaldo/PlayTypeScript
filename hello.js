@@ -34,3 +34,14 @@ function greeter(person) {
     return "Hello, " + person;
 }
 var user = "Jane User";
+var Student = /** @class */ (function () {
+    function Student(firstName, middleInitial, lastName) {
+        this.firstName = firstName;
+        this.middleInitial = middleInitial;
+        this.lastName = lastName;
+        this.fullName = firstName + "" + middleInitial + "" + lastName;
+    }
+    return Student;
+}());
+var junior = new Student("lee", "", "jinam");
+console.log(junior.fullName);
