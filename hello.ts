@@ -41,3 +41,14 @@ class Student {
 }
 let junior = new Student("lee", "", "jinam");
 console.log(junior.fullName);
+
+interface Person {
+    firstName: string
+    lastName: string;
+}
+
+function grettingUser(person: Person) {
+    return "Hello, " + person.firstName + "" + person.lastName;
+}
+let hosts = new Student("Jane", "M.", "User");
+console.log(grettingUser(hosts));

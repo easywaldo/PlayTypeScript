@@ -45,3 +45,8 @@ var Student = /** @class */ (function () {
 }());
 var junior = new Student("lee", "", "jinam");
 console.log(junior.fullName);
+function grettingUser(person) {
+    return "Hello, " + person.firstName + "" + person.lastName;
+}
+var hosts = new Student("Jane", "M.", "User");
+console.log(grettingUser(hosts));
