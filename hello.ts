@@ -52,3 +52,5 @@ function grettingUser(person: Person) {
 }
 let hosts = new Student("Jane", "M.", "User");
 console.log(grettingUser(hosts));
+
+
