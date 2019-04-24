@@ -1,21 +1,28 @@
-
-interface Car {
+interface Person {
     name: string;
     age: number;
 }
-function getDisplayCarName(c: Car) {
-    return c.name.toLowerCase();
+
+class Employee {
+    constructor(public name: string, public age: number) {
+    }
 }
-function getCarLength(s: string) {
+
+function getDisplayName(p: Person) {
+    console.log(p.name.toLocaleLowerCase());
+    return p.name.toLowerCase();
+}
+
+function getLength(s: string) {
+    console.log(s.length);
     return s.length;
 }
 
-const getDisplayCarNameLength = composed(
-    getDisplayCarName,
-    getCarLength,
-);
+// has type '(p: Person) => number'
+const getDisplayNameLength = (a, b) => (getDisplayName(a), getLength(b))
 
-getDisplayCarNameLength({
-    name: "Lamborgini",
-    age: 22
-});
+// works and returns the type 'number'
+let waldo = new Employee("waldo", 39);
+
+getDisplayNameLength(waldo, waldo.name);
+//getDisplayNameLength({ name: "Person McPersonface", age: 42 });
