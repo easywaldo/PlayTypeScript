@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/easywaldo/PlayTypeScript/issues"
   },
-  "homepage": "https://github.com/easywaldo/PlayTypeScript#readme"
+  "homepage": "https://github.com/easywaldo/PlayTypeScript#readme",
+  "dependencies": {
+    "tslint": "^5.16.0"
+  }
 }
