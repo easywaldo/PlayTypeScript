@@ -11,3 +11,13 @@ let c = {
 let d = c.apple * 4;
 
 console.log(a,b,c,d);
+
+
+
+let unknownValue : unknown = 30;
+let b2 = unknownValue === 123;
+//let c2 = unknownValue + 10;
+if (typeof unknownValue === 'number') {
+    let d = unknownValue + 10;
+    console.log(d);
+}
