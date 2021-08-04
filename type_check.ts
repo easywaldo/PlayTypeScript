@@ -24,8 +24,12 @@ if (typeof unknownValue === 'number') {
 
 
 let z1: true = true;
-//let z2: true = false;
+//let z2: true = false; // error
 console.log(z1);
 
 let z2: false = false;
 console.log(z2);
+
+
+let n1: 10.314 = 10.314;
+//let n2: 10.314 = 100; // error
