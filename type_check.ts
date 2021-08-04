@@ -21,3 +21,11 @@ if (typeof unknownValue === 'number') {
     let d = unknownValue + 10;
     console.log(d);
 }
+
+
+let z1: true = true;
+//let z2: true = false;
+console.log(z1);
+
+let z2: false = false;
+console.log(z2);
