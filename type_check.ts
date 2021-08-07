@@ -33,3 +33,22 @@ console.log(z2);
 
 let n1: 10.314 = 10.314;
 //let n2: 10.314 = 100; // error
+
+
+let student: object = {
+    name: 'wlado'
+};
+console.log(student); //compile error
+
+class StudentInfo {
+    readonly firstName: string;
+    readonly lastName: string;
+    constructor(firstName: string,lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+
+let student2 = new StudentInfo("lee", "jinam");
+console.log(student2.firstName);
+console.log(student2.lastName);
