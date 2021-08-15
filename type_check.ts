@@ -52,3 +52,38 @@ class StudentInfo {
 let student2 = new StudentInfo("lee", "jinam");
 console.log(student2.firstName);
 console.log(student2.lastName);
+
+
+let optionalInfo : {
+    mustA: number;
+    mustB?: string;
+    [key: number]: boolean;
+};
+
+optionalInfo = {
+    mustA: 100,
+};
+console.log("mustB is " + optionalInfo.mustB);
+optionalInfo = {
+    mustA: 1200,
+    mustB: "waldo",
+};
+
+console.log(optionalInfo.mustB);
+console.log(optionalInfo);
+
+type Cat = {name: string, purrs: boolean}
+type Dog = {name: string, barks: boolean, wags: boolean}
+type CatOrDogOrBoth = Cat | Dog
+type CatAndDog = Cat & Dog
+
+let cute : CatOrDogOrBoth = {
+    name: "kitty",
+    purrs: true
+};
+console.log(cute);
+
+let onlyCat: Dog = {
+    name: "onlyCat",
+    purrs: "ok__props",
+};
