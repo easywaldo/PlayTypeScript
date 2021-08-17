@@ -77,13 +77,20 @@ type Dog = {name: string, barks: boolean, wags: boolean}
 type CatOrDogOrBoth = Cat | Dog
 type CatAndDog = Cat & Dog
 
+// cat or dog
 let cute : CatOrDogOrBoth = {
     name: "kitty",
     purrs: true
 };
 console.log(cute);
 
-let onlyCat: Dog = {
+// cat and dog
+let catAndDog: CatAndDog = {
     name: "onlyCat",
-    purrs: "ok__props",
+    purrs: true,
+    barks: true,
+    wags: false,
 };
+
+console.log(catAndDog);
+
