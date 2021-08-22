@@ -94,3 +94,18 @@ let catAndDog: CatAndDog = {
 
 console.log(catAndDog);
 
+
+// true or null
+type Returns = string | null;
+function trueOrNull(isTrue: boolean) {
+    if (isTrue) {
+        return 'true';
+    }
+    return null;
+}
+console.log(trueOrNull(1===1));
+let nullOfValue: Returns = null;
+let valueData: Returns = "hello my honey";
+console.log(nullOfValue);
+console.log(valueData);
+let notNumber: Returns = 10;
