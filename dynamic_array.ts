@@ -19,4 +19,16 @@ anyArray.push("hello");
 
 let numArray :number[] = [];
 numArray.push(1);
-numArray.push("hello");
+//numArray.push("hello");
+
+
+anyArray.map(e => {
+    if (typeof e === 'number') {
+        e =  e * 100;
+    }
+    console.log('e is ' + e);
+    //return e.toUpperCase();
+})
+console.log(anyArray);
+
+
