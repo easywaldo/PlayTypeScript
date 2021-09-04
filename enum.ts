@@ -8,3 +8,9 @@ enum Language {
 };
 
 console.log(Language);
+
+
+let myFirstLanguage = Language.Korean;
+let mySecondLanguage = Language['English'];
+
+console.log(myFirstLanguage, mySecondLanguage);
